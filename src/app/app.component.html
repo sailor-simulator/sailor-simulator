@@ -1,0 +1,49 @@
+<div class="container pt-3 pb-3">
+  <ul class="nav nav-tabs mt-3 mb-5">
+    <li *ngFor="let tab of languageTabs" class="nav-item">
+      <a
+        class="nav-link"
+        [class.active]="tab.value === selectedLanguage"
+        aria-current="page"
+        (click)="changeSelectedLanguage(tab.value)">
+        {{ tab.label }}
+      </a>
+    </li>
+  </ul>
+  <div class="d-flex justify-content-center align-items-center">
+    <div>
+      <app-settings
+        *ngIf="!hasTestStarted && !hasTestFinished"
+        [selectedLanguage]="selectedLanguage"
+        [isQuestionsRandom]="isQuestionsRandom"
+        [isAnswerVariantsRandom]="isAnswerVariantsRandom"
+        (testStarted)="startTest($event)">
+      </app-settings>
+    </div>
+  </div>
+  <app-questions
+    *ngIf="hasTestStarted"
+    [selectedLanguage]="selectedLanguage"
+    [isAnswerVariantsRandom]="isAnswerVariantsRandom"
+    [questions]="questions"
+    (errorAnswer)="updateUnPassedQuestions($event)"
+    (isLoading)="startAndStopSpinner()"
+    (testFinished)="finishTest()"
+    (testDeclined)="declineTest()">
+  </app-questions>
+
+  <app-results
+    *ngIf="hasTestFinished"
+    [selectedLanguage]="selectedLanguage"
+    [unPassedQuestions]="unPassedQuestions"
+    [questions]="questions"
+    [maximumErrorsQty]="maximumErrorsQty"
+    (isLoading)="startAndStopSpinner()"
+    (testRestarted)="restartTest()">
+  </app-results>
+</div>
+
+
+<div class="spinner-grow text-primary" role="status" *ngIf="isLoading">
+  <span class="visually-hidden">Loading...</span>
+</div>

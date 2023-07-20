@@ -1,0 +1,52 @@
+<div class="text-center mt-5 mb-5">
+  <img
+    class="mb-3 main_image"
+    src="/assets/images/yacht.jpeg"
+  />
+  <h1 class="display-1 mb-3">
+    {{ unPassedQuestions.length <= maximumErrorsQty ? testSuccessText[selectedLanguage] : testFailureText[selectedLanguage] }}
+  </h1>
+
+  <h2 class="mb-5">
+    {{ questions.length  - unPassedQuestions.length }} {{ fromText[selectedLanguage] }} {{ questions.length }}
+  </h2>
+</div>
+<div class="container result" *ngIf="unPassedQuestions.length">
+  <div class="text-center mb-5">
+    <h3>{{ errorQtyText[selectedLanguage] }}: {{ unPassedQuestions.length }}</h3>
+  </div>
+  <div class="text-center error_question mt-3 mb-3" *ngFor="let question of unPassedQuestions">
+    <hr/>
+    <h4 class="mt-5">{{ question['title_' + selectedLanguage] }}</h4>
+    <div *ngIf="question.images?.length">
+      <div class="column center mt-3 mb-3">
+        <img 
+          class="question_image"
+          *ngFor="let img of question.images"
+          [src]="'/assets/images/' + img" />
+      </div>
+    </div>
+    <div class="text-center mb-5">
+      <button
+        *ngFor="let answerVariant of question.answer_variants"
+        type="button"
+        class="btn mt-3 result-btn"
+        [class.btn-light]="!answerVariant.has_selected && !answerVariant.is_correct"
+        [class.btn-success]="answerVariant.is_correct"
+        [class.btn-danger]="answerVariant.has_selected">
+        {{ answerVariant['title_' + selectedLanguage] }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="text-center mt-5 mb-3">
+  <button
+      type="button"
+      class="btn btn-primary btn-lg restart-btn"
+      (click)="restartTest()">
+      <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" *ngIf="isLoading"></span>
+      {{ restartTestText[selectedLanguage] }}
+    </button>
+</div>

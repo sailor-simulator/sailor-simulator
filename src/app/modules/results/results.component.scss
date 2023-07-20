@@ -1,0 +1,32 @@
+.main_image {
+  max-width: 180px;
+}
+.btn {
+  text-transform: none !important;
+
+  &.result-btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &.restart-btn {
+    max-width: 420px;
+    width: 80%;
+  }
+}
+
+.btn-danger {
+  text-decoration: line-through;
+}
+
+.error_question {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question_image {
+  max-height: 120px;
+  width: auto;
+}

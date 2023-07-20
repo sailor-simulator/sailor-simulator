@@ -1,0 +1,47 @@
+<div class="text-center">
+  <img
+    class="mb-1 main_image"
+    src="/assets/images/yacht.jpeg"
+  />
+</div>
+<div class="container form-wrapper">
+  <h3 class="mb-3 text-center">{{ titleText[selectedLanguage] }}</h3>
+  <h5 class="text-center">{{ descriptionText[selectedLanguage] }}</h5>
+  <form #form="ngForm">
+    <button
+      type="button"
+      class="btn btn-primary btn-block btn-lg mt-5"
+      (click)="startTest()">
+      <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" *ngIf="isLoading"></span>
+      {{ startTestText[selectedLanguage] }}
+    </button>
+    <div class="row mt-3">
+      <div class="col">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="randomQuestions"
+          [(ngModel)]="isQuestionsRandom"
+          [ngModelOptions]="{standalone: true}">
+        <label class="form-check-label" for="randomQuestions">
+          {{ randomQuestionText[selectedLanguage] }}
+        </label>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="randomAnswers"
+          [(ngModel)]="isAnswerVariantsRandom"
+          [ngModelOptions]="{standalone: true}">
+        <label class="form-check-label" for="randomAnswers">
+          {{ randomAnswerVariantsText[selectedLanguage] }}
+        </label>
+      </div>
+    </div>
+  </form>
+</div>
