@@ -1,23 +1,23 @@
-<div class="text-center mt-5 mb-5">
+<div class="text-center mt-1 mb-1">
   <img
     class="mb-3 main_image"
     src="/assets/images/yacht.jpeg"
   />
-  <h1 class="display-1 mb-3">
+  <h5 class="display-5 mb-3">
     {{ unPassedQuestions.length <= maximumErrorsQty ? testSuccessText[selectedLanguage] : testFailureText[selectedLanguage] }}
-  </h1>
+  </h5>
 
-  <h2 class="mb-5">
+  <h5 class="mb-3">
     {{ questions.length  - unPassedQuestions.length }} {{ fromText[selectedLanguage] }} {{ questions.length }}
-  </h2>
+  </h5>
 </div>
 <div class="container result" *ngIf="unPassedQuestions.length">
-  <div class="text-center mb-5">
-    <h3>{{ errorQtyText[selectedLanguage] }}: {{ unPassedQuestions.length }}</h3>
+  <div class="text-center mb-3">
+    <h5>{{ errorQtyText[selectedLanguage] }}: {{ unPassedQuestions.length }}</h5>
   </div>
   <div class="text-center error_question mt-3 mb-3" *ngFor="let question of unPassedQuestions">
     <hr/>
-    <h4 class="mt-5">{{ question['title_' + selectedLanguage] }}</h4>
+    <h5 class="mt-3">{{ question['title_' + selectedLanguage] }}</h5>
     <div *ngIf="question.images?.length">
       <div class="column center mt-3 mb-3">
         <img 
@@ -26,11 +26,11 @@
           [src]="'/assets/images/' + img" />
       </div>
     </div>
-    <div class="text-center mb-5">
+    <div class="text-center mb-3">
       <button
         *ngFor="let answerVariant of question.answer_variants"
         type="button"
-        class="btn mt-3 result-btn"
+        class="btn mt-2 result-btn"
         [class.btn-light]="!answerVariant.has_selected && !answerVariant.is_correct"
         [class.btn-success]="answerVariant.is_correct"
         [class.btn-danger]="answerVariant.has_selected">
