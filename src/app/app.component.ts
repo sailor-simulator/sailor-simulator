@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   constructor(private arrayService: ArrayService) {}
 
   ngOnInit(): void {
-    this.questions = JSON.parse(JSON.stringify(QuestionsEnum));
+    this.questions = JSON.parse(JSON.stringify(QuestionsEnum)).filter(item => item.id < 3);
     if (!localStorage.getItem('lang')) {
       localStorage.setItem('lang', this.selectedLanguage);
     } else {
@@ -39,9 +39,9 @@ export class AppComponent implements OnInit {
     this.isAnswerVariantsRandom = testSettings.isAnswerVariantsRandom;
     this.hasTestStarted = true;
     if (this.isQuestionsRandom) {
-      this.questions = this.arrayService.shuffleArray(this.questions);
+      this.questions = this.arrayService.shuffleArray(this.questions).filter(item => item.id < 3);
     } else {
-      this.questions = JSON.parse(JSON.stringify(QuestionsEnum));
+      this.questions = JSON.parse(JSON.stringify(QuestionsEnum)).filter(item => item.id < 3);
     }
     if (this.isAnswerVariantsRandom) {
       this.questions.map(question => {
