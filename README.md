@@ -2,7 +2,7 @@
 
 ## Summary
 
-Online simulator for young sailors. Answer the questions step by step and observe yout progress.
+Online simulator for young sailors. Answer the questions step by step and observe your progress.
 
 ## Framework
 
