@@ -1820,7 +1820,7 @@ export const QuestionsEnum: IQuestion[] = [
         id: 2,
         title_by: "лінія напружання над водным шляхам на вышыні 12 метраў над узроўнем найвышэйшай вады",
         title_ru: "линия напряжения над водным путём на высоте 12 метров над уровнем наивысшей воды",
-        title_pl: "linia napowietrzana nad drogą wodną na wysokości 12 metrów nad poziomen najniższej",
+        title_pl: "linia napowietrzana nad drogą wodną na wysokości 12 metrów nad poziomem najwyższa wody",
         has_selected: undefined,
         is_correct: true 
       },
@@ -1828,7 +1828,7 @@ export const QuestionsEnum: IQuestion[] = [
         id: 3,
         title_by: "лінія напружання над водным шляхам на вышыні 12 метраў над узроўнем найменшай вады",
         title_ru: "линия напряжения над водным путём на высоте 12 метров над уровнем наименьшей воды",
-        title_pl: "linia napowietrzana nad drogą wodną na wysokości 12 metrów nad poziomen najwyższa wody",
+        title_pl: "linia napowietrzana nad drogą wodną na wysokości 12 metrów nad poziomem najniższej wody",
         has_selected: undefined,
         is_correct: false 
       }
