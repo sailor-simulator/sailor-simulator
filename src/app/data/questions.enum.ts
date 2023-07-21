@@ -69,7 +69,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 3,
-    title_by: "На водным шляху пад мастом стырнач заўважыў знак ніжэй. Што азначае гэты знак?",
+    title_by: "На водным шляху пад мастом стырнач заўважыў знак пазначаны ніжэй. Што азначае гэты знак?",
     title_ru: "На водном пути под мостом рулевой заметил знак ниже. Что означает этот знак?",
     title_pl: "Na drodze wodnej pod mostem sternik zauważył poniższy znak. Co on oznacza?",
     images: ["image3.png"],
@@ -102,7 +102,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 4,
-    title_by: "Дзе капітан павінен прышвартаваць яхту, калі плыве ў напрамку ніжэйзгаданага знака?",
+    title_by: "Дзе капітан павінен прышвартаваць яхту, калі плыве ў напрамку паказанага ніжэй знака?",
     title_ru: "Где рулевой должен пришвартоваться, если идет в направлении знака ниже?",
     title_pl: "Gdzie sternik musi zacumować jacht jeśli płynie w kierunku poniższego znaku?",
     images: ["image4.png"],
@@ -190,7 +190,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 3,
-        title_by: "толькі і выключна ўласнік яхты, нават калі ён не з'яўляецца капітанам яхты",
+        title_by: "толькі ўласнік яхты, нават калі ён не з'яўляецца капітанам яхты",
         title_ru: "только хозяин яхты, даже если он не является капитаном яхты",
         title_pl: "tylko i wyłącznie właściciel jachtu, nawet jeśli nie jest kapitanem jachtu",
         has_selected: undefined,
@@ -222,7 +222,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 3,
-        title_by: "суднам маторнным толькі калі матор працуе",
+        title_by: "суднам маторным толькі калі матор працуе",
         title_ru: "судном моторным, но только когда двигатель работает",
         title_pl: "statek mechaniczny tylko wtedy gdy silnik pracuje na biegu",
         has_selected: undefined,
@@ -254,7 +254,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 3,
-        title_by: "калі няма ўключанага матора або пастаўленых парсусоў, судна не з'яўляецца суднам на хаду",
+        title_by: "калі няма ўключанага рухавіка або пастаўленых парусоў, судна не з'яўляецца суднам на хаду",
         title_ru: "если нет включённого двигателя или поставленных парусов, судно не является судном на ходу",
         title_pl: "jeśli nie ma uruchomionego silnika lub postawionych żagli nie jest statkiem w drodze",
         has_selected: undefined,
@@ -360,13 +360,13 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 12,
-    title_by: "Які курс з'яўляецца астрэйшым, а які паўнейшым?",
+    title_by: "Які курс з'яўляецца вастрэйшым, а які паўнейшым?",
     title_ru: "Какой курс является острее, а какой полнее?",
     title_pl: "Który kurs jest ostrzejszy a który pełniejszy?",
     answer_variants: [
       {
         id: 1,
-        title_by: "галфвінд з'яўляецца астрэйшым, а бэйдэвінд паўнейшым",
+        title_by: "галфвінд з'яўляецца вастрэйшым, а бэйдэвінд паўнейшым",
         title_ru: "галфвинд является острее, а бейдевинд полнее",
         title_pl: "półwiatr jest ostrzejszy a bejdewind pełniejszy",
         has_selected: undefined,
@@ -374,7 +374,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 2,
-        title_by: "бакштаг з'яўляецца астрэйшым, а галфвінд паўнейшым",
+        title_by: "бакштаг з'яўляецца вастрэйшым, а галфвінд паўнейшым",
         title_ru: "бакштаг является острее, а галфвинд полнее",
         title_pl: "baksztag jest ostrzejszy a półwiatr pełniejszy",
         has_selected: undefined,
@@ -382,7 +382,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 3,
-        title_by: "бакштаг з'яўляецца астрэйшым, а фордэвінд паўнейшым",
+        title_by: "бакштаг з'яўляецца вастрэйшым, а фордэвінд паўнейшым",
         title_ru: "бакштаг является острее, а фордевинд полнее",
         title_pl: "baksztag jest ostrzejszy a fordewind pełniejszy",
         has_selected: undefined,
@@ -424,7 +424,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 14,
-    title_by: "На курсе бэйдэвінд, падчас сільнага парыву ветру яхта занадта нахілілася. Што павінен зрабіць стырнач каб супрацьдзеяць крэну?",
+    title_by: "На курсе бэйдэвінд, падчас моцнага парыву ветру яхту занадта накрэніла. Што павінен зрабіць стырнач каб супрацьдзеяць крэну?",
     title_ru: "На курсе бейдевинд, при сильном порыве ветра яхту чрезмерно накренило. Что должен сделать рулевой, чтобы противодействовать крену?",
     title_pl: "Na kursie bejdewind, w trakcie silnego podmuchu wiatru, jacht nadmiernie się przechylił. Co musi zrobić sternik aby przeciwdziałać przechyłowi?",
     answer_variants: [
@@ -446,7 +446,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 3,
-        title_by: "нічога не рабіць і чакаць падхваліны ветру",
+        title_by: "нічога не рабіць і пачакаць парыву ветру",
         title_ru: "ничего не делать и подождать порыва ветра",
         title_pl: "nic nie robić i przeczekać podmuch wiatru",
         has_selected: undefined,
@@ -462,7 +462,7 @@ export const QuestionsEnum: IQuestion[] = [
     answer_variants: [
       {
         id: 1,
-        title_by: "павелічэнне навятранасці яхты",
+        title_by: "павелічэнне наветранасці яхты",
         title_ru: "увеличение наветренности яхты",
         title_pl: "zwiększenie nawietrzności jachtu",
         has_selected: undefined,
@@ -494,7 +494,7 @@ export const QuestionsEnum: IQuestion[] = [
     answer_variants: [
       {
         id: 1,
-        title_by: "найбуйнейшае - бэйдэвінд, найменшае - фордевінд",
+        title_by: "найбуйнейшае - бэйдэвінд, найменшае - фордэвінд",
         title_ru: "наибольшее - бейдевинд, наименьшее - фордевинд",
         title_pl: "największe – bejdewind, najmniejsze – fordewind",
         has_selected: undefined,
@@ -520,7 +520,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 17,
-    title_by: "На яхце, што рухаецца, вымпельны вецер дзьме перпендыкулярна дыяметральнай плоскасці яхты. У такім выпадку, вецер сапращдны адносна ветру вымпельнага дзьме ў напрамку бліжэй да:",
+    title_by: "На яхце, што рухаецца, вымпельны вецер дзьме перпендыкулярна дыяметральнай плоскасці яхты. У такім выпадку, вецер сапраўдны адносна ветру вымпельнага дзьме ў напрамку бліжэй да:",
     title_ru: "На движущейся яхте, вымпельный ветер дует перпендикулярно диаметральной плоскости яхты. В таком случае, ветер истинный относительно ветра вымпельного дует в направлении ближе к:",
     title_pl: "Na poruszającym się jachcie wiatr pozorny wieje prostopadle do diametralnej jachtu. Czy w takim przypadku wiatr rzeczywisty w stosunku do wiatru pozornego wieje z kierunku zbliżonego do:",
     answer_variants: [
@@ -574,7 +574,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 3,
-        title_by: "ад даўжыні выданага якарнага ланцуга, які павінен быць не меншы за 3 і большы за 5 глыбінь акваторыі ў месцы якарнай стоянкі",
+        title_by: "ад даўжыні выданага якарнага ланцуга, які павінен быць не меншы за 3 і большы за 5 глыбінь акваторыі ў месцы якарнай стаянкі",
         title_ru: "от длины отданой якорной цепи, которая должна быть не короче 3 и больше 5 глубин акватории в месте якорной стоянки",
         title_pl: "od długości wydanego łańcucha kotwicznego, który powinien być nie krótszy niż miedzy 3 i nie dłuższy niż 5 głębokości w miejscu kotwiczenia",
         has_selected: undefined,
@@ -617,7 +617,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 20,
-    title_by: "Яхта, якая ідзе па плыні ракі, набліжаецца да паказаных ніжэй навігацыйных знакаў, устаноўленых на беразе. Што павінен зрабіць капітан?",
+    title_by: "Яхта, якая ідзе па плыні ракі, набліжаецца да паказаных ніжэй навігацыйных знакаў, усталяваных на беразе. Што павінен зрабіць капітан?",
     title_ru: "Яхта, идущая по течению реки, сближается с предоставленными ниже навигационными знаками, установленными на берегу. Что должен сделать рулевой?",
     title_pl: "Jacht płynący z prądem rzeki zbliża się do przedstawionych niżej znaków nawigacyjnych ustawionych na brzegu. Co musi zrobić sternik?",
     "images": ["image7.png", "image8.png"],
@@ -682,7 +682,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 22,
-    title_by: "Што мы рабім з парусами при ўвальванні і прывядзенні для забеспячэння правільнай работы?",
+    title_by: "Што мы робім з парусамі пры ўвальванні і прывядзенні для забеспячэння правільнай работы?",
     title_ru: "Что мы делаем с парусами при уваливании и приведении для обеспечения правильной работы?",
     title_pl: "Co robimy z żaglami przy odpadaniu i ostrzeniu aby zapewnić prawidłowa prace?",
     answer_variants: [
@@ -736,7 +736,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 3,
-        title_by: "терміны адносяцца толькі да морскіх яхтаў",
+        title_by: "тэрміны адносяцца толькі да морскіх яхтаў",
         title_ru: "термины касаются только морских яхт",
         title_pl: "termin dotyczy tylko jachtów morskich",
         has_selected: undefined,
@@ -752,7 +752,7 @@ export const QuestionsEnum: IQuestion[] = [
     answer_variants: [
       {
         id: 1,
-        title_by: "абганяючая",
+        title_by: "тая, што абганяе",
         title_ru: "обгоняющая",
         title_pl: "wyprzedzający",
         has_selected: undefined,
@@ -880,7 +880,7 @@ export const QuestionsEnum: IQuestion[] = [
     answer_variants: [
       {
         id: 1,
-        title_by: "дзённы брыз дзьме ў поўдзень, а марскі дзьме ноччу",
+        title_by: "дзённы брыз дзьме апоўдні, а марскі дзьме ноччу",
         title_ru: "дневной бриз дует в полдень, а морской дует ночью",
         title_pl: "bryza dzienna wieje po południu a bryza morska w nocy",
         has_selected: undefined,
@@ -888,7 +888,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 2,
-        title_by: "марскі брыз дзьме пры ўсходзе сонца, а дзённы дзьме ў поўдзень",
+        title_by: "марскі брыз дзьме пры ўсходзе сонца, а дзённы дзьме апоўдні",
         title_ru: "морской бриз дует при восходе солнца, а дневной дует в полдень",
         title_pl: "bryza morska wieje po wschodzie słońca a bryza dzienna po południu",
         has_selected: undefined,
@@ -906,7 +906,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 29,
-    title_by: "Моцна пашыраючыяся па вертыкалі хмары тыпу Cumulus могуць прадказваць:",
+    title_by: "Хмары тыпу Cumulus, якія моцна пашыраюцца па вертыкалі, могуць прадказаць:",
     title_ru: "Cильно расширяющиеся вертикально облака типа Сumulus могут предсказать:",
     title_pl: "Silnie rozbudowujące się w pionie chmury typu Cumulus mogą prognozować:",
     answer_variants: [
@@ -1098,7 +1098,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 35,
-    title_by: "Праектная катэгорыя яхтаў С вызначае запраектаваныя адзінкі для рэйсаў у берагавых водах, вялікіх залівах, залівах, азёрах і раках, пры ўмове сілы ветру:",
+    title_by: "Праектная катэгорыя яхтаў С вызначае запраектаваныя адзінкі для рэйсаў у берагавых водах, вялікіх залівах, залівах, азёрах і рэках, пры ўмове сілы ветру:",
     title_ru: "Проектная категория яхт С определяет запроектированные единицы для рейсов в прибрежных водах, больших заливах, наводнениях, озерах и реках, при условии силы ветра:",
     title_pl: "Kategoria projektowa jachtu C określa jednostki zaprojektowane do rejsów po wodach przybrzeżnych, dużych zatokach, zalewach, jeziorach i rzekach, w warunkach wiatru o sile:",
     answer_variants: [
@@ -1226,7 +1226,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 39,
-    title_by: "Якое мінімальнае ўзроставае патрабаванне, каб прыступіць да экзамену на ступень żeglarza jachtowego?",
+    title_by: "Якія мінімальныя ўзроставыя патрабаванні, каб прыступіць да экзамену на ступень żeglarza jachtowego?",
     title_ru: "Каковы минимальные возрастные требования, чтобы приступить к экзамену на ступень żeglarza jachtowego?",
     title_pl: "Jakie są minimalne wymagania wiekowe aby przystąpić do egzaminu na stopień żeglarza jachtowego?",
     answer_variants: [
@@ -1304,7 +1304,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 2,
-        title_by: "заціскання шверта",
+        title_by: "трымання шверта",
         title_ru: "держания шверта",
         title_pl: "kontrowania miecza",
         has_selected: undefined,
@@ -1336,7 +1336,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 2,
-        title_by: "можна, але толькі пасля знаёмства з воднымі шляхамі",
+        title_by: "можна, але толькі пасля азнаямлення з воднымі шляхамі",
         title_ru: "можно, но при ознакомлении водных путей",
         title_pl: "można ale tylko po oznakowanych torach wodnych",
         has_selected: undefined,
@@ -1546,7 +1546,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 49,
-    title_by: "На курсе бакштаг адчуванне сілы сапраўднага ветру слабейшае або моцнейшае ў адносінах да вымпельнага ветру?",
+    title_by: "На курсе бакштаг адчуванне сілы сапраўднага ветру слабейшае або мацнейшае ў адносінах да вымпельнага ветру?",
     title_ru: "На курсе бакштаг чувство силы истинного ветра слабее или сильнее по отношению к вымпельному ветру?",
     title_pl: "Na kursie baksztag odczucie sily wiatru rzeczywistego jest słabsze czy silniejsze w stosunku do wiatru pozornego.",
     answer_variants: [
@@ -1610,7 +1610,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 51,
-    title_by: "Якая тэмпература ахладжвання ўнутраных арганаў можа прывесці да глыбокага пераахалоджвання, што вядзе да біялагічнай смерці?",
+    title_by: "Якая тэмпература ахалоджвання ўнутраных органаў можа прывесці да глыбокага пераахалоджвання, што вядзе да біялагічнай смерці?",
     title_ru: "Какая температура охлаждения внутренних органов может привести к глубокому переохлаждению, ведущему к биологической смерти?",
     title_pl: "Jaka temperatura wychłodzena wnętrza ciała może doprowadzić do hipotermii głębokiej prowadzącej do śmierci biologicznej?",
     answer_variants: [
@@ -1752,7 +1752,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       { 
         id: 2,
-        title_by: "сігнал прывітання іншых матросяў",
+        title_by: "сігнал прывітання іншых матросаў",
         title_ru: "сигнал приветствия других матросов",
         title_pl: "gest pozdrawiający innych żeglarzy",
         has_selected: undefined,
@@ -1996,13 +1996,13 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 63,
-    title_by: "Чам ніжэйшая тэмпература вады пры выпадзенні чалавека за борт, шансы выжывання будуць:",
+    title_by: "Чым ніжэйшая тэмпература вады пры выпадзенні чалавека за борт, шансы выжывання будуць:",
     title_ru: "Чем ниже температура воды при выпадении человека за борт, шансы выживания будут:",
     title_pl: "Czym niższa temperatura wody przy wypadnięciu człowieka za burtę, szanse przeżycia będą:",
     answer_variants: [
       {
         id: 1,
-        title_by: "вышэй",
+        title_by: "вышэйшыя",
         title_ru: "выше",
         title_pl: "rosną",
         has_selected: undefined,
@@ -2010,7 +2010,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 2,
-        title_by: "ніжэй",
+        title_by: "ніжэйшыя",
         title_ru: "ниже",
         title_pl: "maleją",
         has_selected: undefined,
@@ -2194,7 +2194,7 @@ export const QuestionsEnum: IQuestion[] = [
     answer_variants: [
       {
         id: 1,
-        title_by: "з пярэдніх парусоў",
+        title_by: "ад пярэдніх парусоў",
         title_ru: "с передних парусов",
         title_pl: "od żagli przegnich",
         has_selected: undefined,
@@ -2202,7 +2202,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 2,
-        title_by: "з задніх парусоў",
+        title_by: "ад задніх парусоў",
         title_ru: "с задних парусов",
         title_pl: "od żagli tylnych",
         has_selected: undefined,
@@ -2252,7 +2252,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 71,
-    title_by: "Як называецца вяроўка (швартовы), якая злучае яхту з набярэжнай і працягваецца ад носа да кармы?",
+    title_by: "Як называецца вяроўка (швартов), якая злучае яхту з набярэжнай і працягваецца ад носа да кармы?",
     title_ru: "Как называется верёвка (швартов), которая соединяет яхту с набережной и идёт от носа к корме?",
     title_pl: "Jak nazywa się lina lącząca jacht z nabrzeżem i biegnąca od dziobu w kierunku rufy?",
     answer_variants: [

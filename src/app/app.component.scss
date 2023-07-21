@@ -6,7 +6,12 @@
   top: calc(25vh);
 }
 
-
-.nav-link {
-  cursor: pointer;
+.nav-tabs {
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 250px;
+  .nav-link {
+    cursor: pointer;
+  }
 }
+
