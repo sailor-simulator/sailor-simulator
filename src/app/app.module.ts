@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SettingsComponent } from './modules/settings/settings.component';
 import { QuestionsComponent } from './modules/questions/questions.component';
 import { ResultsComponent } from './modules/results/results.component';
+import { FocusRemoverDirective } from './directives/focus-remover.directive';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ResultsComponent } from './modules/results/results.component';
     QuestionsComponent,
     ResultsComponent,
     EndingsPipe,
+    FocusRemoverDirective
   ],
   imports: [
     BrowserModule,
