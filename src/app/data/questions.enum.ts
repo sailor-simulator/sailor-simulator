@@ -296,7 +296,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 10,
-    title_by: "На курсе бэйдэвінд моцна выбраны пярэдні парус і патраўлены грот выклікаюць:",
+    title_by: "На курсе бейдевінд моцна выбраны пярэдні парус і патраўлены грот выклікаюць:",
     title_ru: "На курсе бейдевинд сильно выбранный передний парус и потравленный грот вызывают:",
     title_pl: "Na kursie bejdewind za mocno wybrany fok i poluzowany grot powoduje:",
     answer_variants: [
@@ -350,7 +350,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 3,
-        title_by: "бэйдэвінд",
+        title_by: "бейдевінд",
         title_ru: "бейдевинд",
         title_pl: "pełny bejdewind",
         has_selected: undefined,
@@ -366,7 +366,7 @@ export const QuestionsEnum: IQuestion[] = [
     answer_variants: [
       {
         id: 1,
-        title_by: "галфвінд з'яўляецца вастрэйшым, а бэйдэвінд паўнейшым",
+        title_by: "галфвінд з'яўляецца вастрэйшым, а бейдевінд паўнейшым",
         title_ru: "галфвинд является острее, а бейдевинд полнее",
         title_pl: "półwiatr jest ostrzejszy a bejdewind pełniejszy",
         has_selected: undefined,
@@ -424,7 +424,7 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 14,
-    title_by: "На курсе бэйдэвінд, падчас моцнага парыву ветру яхту занадта накрэніла. Што павінен зрабіць стырнач каб супрацьдзеяць крэну?",
+    title_by: "На курсе бейдевінд, падчас моцнага парыву ветру яхту занадта накрэніла. Што павінен зрабіць стырнач каб супрацьдзеяць крэну?",
     title_ru: "На курсе бейдевинд, при сильном порыве ветра яхту чрезмерно накренило. Что должен сделать рулевой, чтобы противодействовать крену?",
     title_pl: "Na kursie bejdewind, w trakcie silnego podmuchu wiatru, jacht nadmiernie się przechylił. Co musi zrobić sternik aby przeciwdziałać przechyłowi?",
     answer_variants: [
@@ -494,7 +494,7 @@ export const QuestionsEnum: IQuestion[] = [
     answer_variants: [
       {
         id: 1,
-        title_by: "найбуйнейшае - бэйдэвінд, найменшае - фордэвінд",
+        title_by: "найбуйнейшае - бейдевінд, найменшае - фордэвінд",
         title_ru: "наибольшее - бейдевинд, наименьшее - фордевинд",
         title_pl: "największe – bejdewind, najmniejsze – fordewind",
         has_selected: undefined,
@@ -510,7 +510,7 @@ export const QuestionsEnum: IQuestion[] = [
       },
       {
         id: 3,
-        title_by: "найбуйнейшае - бэйдэвінд, найменшае - бакштаг",
+        title_by: "найбуйнейшае - бейдевінд, найменшае - бакштаг",
         title_ru: "наибольшее - бейдевинд, наименьшее - бакштаг",
         title_pl: "największe – bejdewind, najmniejsze – baksztag",
         has_selected: undefined,
@@ -526,7 +526,7 @@ export const QuestionsEnum: IQuestion[] = [
     answer_variants: [
       {
         id: 1,
-        title_by: "бэйдэвінду",
+        title_by: "бейдевінду",
         title_ru: "бейдевинду",
         title_pl: "bejdewindowego",
         has_selected: undefined,
@@ -1836,13 +1836,13 @@ export const QuestionsEnum: IQuestion[] = [
   },
   {
     id: 58,
-    title_by: "Дзве яхты ідуць аднолькавым галсам з аднолькавай хуткасцю. Першы - бэйдэвіндам, другі - бакштагам. Іх курсы могуць стварыць рызыку сутыкнення. Хто павінен саступіць?",
+    title_by: "Дзве яхты ідуць аднолькавым галсам з аднолькавай хуткасцю. Першы - бейдевіндам, другі - бакштагам. Іх курсы могуць стварыць рызыку сутыкнення. Хто павінен саступіць?",
     title_ru: "Две яхты идут одинаковым галсом с одинаковой скоростью. Первый - бейдевиндом, второй - бакштагом. Их курсы могут создать риск столкновения. Кто должен уступить?",
     title_pl: "Dwa jachty płyną tym samym halsem i z taką samą predkoscią. Pierwszy bajdewindem a drugi baksztagiem. Kierunki ich przemieszczania się mogą wskazywać na ryzyko zderzenia. Który jacht powinien ustapić?",
     answer_variants: [
       {
         id: 1,
-        title_by: "той, што ідзе бэйдэвіндам",
+        title_by: "той, што ідзе бейдевіндам",
         title_ru: "идущий бейдевиндом",
         title_pl: "plynący bejdewindem",
         has_selected: undefined,
