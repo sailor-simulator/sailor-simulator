@@ -6,8 +6,9 @@ import { Directive, HostListener, ElementRef } from '@angular/core';
 export class FocusRemoverDirective {
   constructor(private elRef: ElementRef) {}
 
-  @HostListener('click') onClick() {
+  @HostListener('touchend') onTouchEnd() {
     setTimeout(() => {
+      console.log(true);
       this.elRef.nativeElement.blur();
     });
   }
