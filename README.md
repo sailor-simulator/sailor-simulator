@@ -17,6 +17,6 @@ https://sailor-simulator.github.io/
 
 ## Getting started
 
-1. Install depenndencies: npm install
+1. Install dependencies: npm install
 2. Local build: npm run start
 3. Production build: npm run build --prod (check /docs folder)
