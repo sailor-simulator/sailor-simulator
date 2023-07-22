@@ -23,6 +23,7 @@ export class QuestionsComponent {
   questionText = QuestionText;
   fromText = FromText;
   finishTestText = FinishTestText;
+  isQuestionVisible = true;
 
   get currentProgress(): number {
     return Math.round((this.counter + 1) / this.questions.length * 100);
@@ -36,13 +37,16 @@ export class QuestionsComponent {
     }
     this.isLoading.emit();
 
+    this.isQuestionVisible = false;
+
     setTimeout(() => {
+      this.isQuestionVisible = true;
       if (this.counter < this.questions.length - 1) {
         this.counter++;
       } else {
         this.testFinished.emit();
       }
-    }, 1500);
+    }, 800);
   }
 
   finishTest(): void {

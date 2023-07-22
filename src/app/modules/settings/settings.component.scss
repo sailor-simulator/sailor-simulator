@@ -1,9 +1,6 @@
 .main_image {
   max-width: 240px;
 }
-.btn {
-  text-transform: none !important;
-}
 
 .row .form-check-input[type=checkbox] {
   margin-top: 5px;
@@ -11,4 +8,8 @@
 
 .form-wrapper {
   max-width: 420px;
+}
+
+.form-check-label {
+  padding-left: 10px;
 }

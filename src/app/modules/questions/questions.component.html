@@ -8,42 +8,44 @@
   </div>
 </div>
 
-<div class="text-center mt-5 mb-5">
-  <div class="container question">
-    <h5 class="mt-1 mb-1">
-      {{ questionText[selectedLanguage] }} {{ counter + 1 }} {{ fromText[selectedLanguage] }} {{ questions.length }}
-    </h5>
-    <div class="row mt-3 question_title">
-      <h4>{{ questions[counter]['title_' + selectedLanguage]}}</h4>
-    </div>
-    <div class="row mt-3" *ngIf="questions[counter].images?.length">
-      <div class="column center">
-        <img 
-          class="question_image"
-          *ngFor="let img of questions[counter].images"
-          [src]="'/assets/images/' + img" />
+<ng-container *ngIf="isQuestionVisible">
+  <div class="text-center mt-5 mb-5">
+    <div class="container question">
+      <h5 class="mt-1 mb-1">
+        {{ questionText[selectedLanguage] }} {{ counter + 1 }} {{ fromText[selectedLanguage] }} {{ questions.length }}
+      </h5>
+      <div class="row mt-3 question_title">
+        <h4>{{ questions[counter]['title_' + selectedLanguage]}}</h4>
       </div>
+      <div class="row mt-3" *ngIf="questions[counter].images?.length">
+        <div class="column center">
+          <img 
+            class="question_image"
+            *ngFor="let img of questions[counter].images"
+            [src]="'/assets/images/' + img" />
+        </div>
+      </div>
+      <div class="answer-section">
+        <button
+          *ngFor="let answerVariant of questions[counter].answer_variants"
+          type="button"
+          class="btn mt-3 answer-btn"
+          [class.btn-light]="answerVariant.has_selected === undefined || answerVariant.has_selected === null"
+          [class.btn-success]="answerVariant.has_selected === answerVariant.is_correct"
+          [class.btn-danger]="answerVariant.has_selected !== answerVariant.is_correct"
+          (click)="selectAnswerVariant(answerVariant, questions[counter])">
+          {{ answerVariant['title_' + selectedLanguage] }}
+        </button>
+      </div> 
     </div>
-    <div class="answer-section">
-      <button
-        *ngFor="let answerVariant of questions[counter].answer_variants"
-        type="button"
-        class="btn mt-3 answer-btn"
-        [class.btn-light]="answerVariant.has_selected === undefined || answerVariant.has_selected === null"
-        [class.btn-success]="answerVariant.has_selected === answerVariant.is_correct"
-        [class.btn-danger]="answerVariant.has_selected !== answerVariant.is_correct"
-        (click)="selectAnswerVariant(answerVariant, questions[counter])">
-        {{ answerVariant['title_' + selectedLanguage] }}
-      </button>
-    </div> 
   </div>
-</div>
-
-<div class="container text-center mt-5 mb-3">
-  <button
-        type="button"
-        class="btn btn-outline-secondary answer-btn"
-        (click)="finishTest()">
-        {{ finishTestText[selectedLanguage] }}
-      </button>
-</div>
+  
+  <div class="container text-center mt-5 mb-3">
+    <button
+          type="button"
+          class="btn btn-outline-secondary answer-btn skip-btn"
+          (click)="finishTest()">
+          {{ finishTestText[selectedLanguage] }}
+        </button>
+  </div>
+</ng-container>
