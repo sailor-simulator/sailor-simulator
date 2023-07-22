@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
     this.unPassedQuestions.push(question);
   }
 
-  startAndStopSpinner(timeout = 1000): void {
+  startAndStopSpinner(timeout = 800): void {
     this.isLoading = true;
     setTimeout(() => {
       this.isLoading = false;
