@@ -35,9 +35,12 @@ export class QuestionsComponent {
     if (answerVariant.id !== rightAnswer.id) {
       this.errorAnswer.emit(question);
     }
-    this.isLoading.emit();
+    
+    setTimeout(() => {
+      this.isQuestionVisible = false;
+      this.isLoading.emit();
+    }, 800);
 
-    this.isQuestionVisible = false;
 
     setTimeout(() => {
       this.isQuestionVisible = true;
@@ -46,7 +49,7 @@ export class QuestionsComponent {
       } else {
         this.testFinished.emit();
       }
-    }, 800);
+    }, 1200);
   }
 
   finishTest(): void {
