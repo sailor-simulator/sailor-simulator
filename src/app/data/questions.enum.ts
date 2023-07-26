@@ -978,7 +978,7 @@ export const QuestionsEnum: IQuestion[] = [
         id: 1,
         title_by: "невялікіх памераў лічбавыя файлы, створаныя камп'ютарнымі сістэмамі, не правераныя сіноптыкам, змяшчаюць прагноз надвор'я, распрацаваны на падставе IT-мадэлі",
         title_ru: "небольших размеров цифровые файлы, сгенерированные через компьютерные системы, не проверенные через синоптика, содержащие погодные прогнозы основанные на IT модели",
-        title_pl: "a. niewielkich rozmiarów pliki cyfrowe, wygenerowane przez systemy komputerowe, nie sprawdzone przez synoptyka, zwierające prognozę pogody opracowana w oparciu o informatyczny model pogody",
+        title_pl: "niewielkich rozmiarów pliki cyfrowe, wygenerowane przez systemy komputerowe, nie sprawdzone przez synoptyka, zwierające prognozę pogody opracowana w oparciu o informatyczny model pogody",
         has_selected: undefined,
         is_correct: true
       },
@@ -986,7 +986,7 @@ export const QuestionsEnum: IQuestion[] = [
         id: 2,
         title_by: "невялікіх памераў лічбавыя файлы, створаны і правераныя сіноптыкам",
         title_ru: "небольших размеров цифровые файлы, сгенерированные и проверенные синоптиком",
-        title_pl: "b. niewielkich rozmiarów pliki cyfrowe, wygenerowane i sprawdzone przez synoptyka",
+        title_pl: "niewielkich rozmiarów pliki cyfrowe, wygenerowane i sprawdzone przez synoptyka",
         has_selected: undefined,
         is_correct: false
       },
@@ -994,7 +994,7 @@ export const QuestionsEnum: IQuestion[] = [
         id: 3,
         title_by: "невялікіх памераў лічбавыя файлы, створаныя камп'ютарнымі сістэмамі, правераныя сіноптыкам, змяшчаюць прагноз надвор'я, распрацаваны на падставе IT-мадэлі",
         title_ru: "небольших размеров цифровые файлы, сгенерированные через компьютерные системы, проверенные через синоптика, содержащие погодные прогнозы основанные на IT модели",
-        title_pl: "c. niewielkich rozmiarów pliki cyfrowe, wygenerowane przez systemy komputerowe, sprawdzone przez synoptyka, zwierające prognozę pogody opracowana w oparciu o informatyczny model pogody",
+        title_pl: "niewielkich rozmiarów pliki cyfrowe, wygenerowane przez systemy komputerowe, sprawdzone przez synoptyka, zwierające prognozę pogody opracowana w oparciu o informatyczny model pogody",
         has_selected: undefined,
         is_correct: false
       }
@@ -1346,7 +1346,7 @@ export const QuestionsEnum: IQuestion[] = [
         id: 3,
         title_by: "можна",
         title_ru: "можно",
-        title_pl: "można.",
+        title_pl: "można",
         has_selected: undefined,
         is_correct: true
       }
@@ -1484,7 +1484,7 @@ export const QuestionsEnum: IQuestion[] = [
     id: 47,
     title_by: "Падчас руху на вадзе стырнач заўважыў адсутнасць працы сістэмы ахлаждэння рухавіка. Што ён павінен зрабіць?",
     title_ru: "В пути на воде под двигателем рулевой заметил отсутствие работы системы охлаждения двигателя. Как он должен поступить?",
-    title_pl: "W trakcie plynęcia na silniku sternik zauważył brak chłodzenia silnika. Co powinen zrobić?",
+    title_pl: "W trakcie plynęcia na silniku sternik zauważył brak chłodzenia silnikCo powinen zrobić?",
     answer_variants: [
       {
         id: 1,
@@ -1548,7 +1548,7 @@ export const QuestionsEnum: IQuestion[] = [
     id: 49,
     title_by: "На курсе бакштаг адчуванне сілы сапраўднага ветру слабейшае або мацнейшае ў адносінах да вымпельнага ветру?",
     title_ru: "На курсе бакштаг чувство силы истинного ветра слабее или сильнее по отношению к вымпельному ветру?",
-    title_pl: "Na kursie baksztag odczucie sily wiatru rzeczywistego jest słabsze czy silniejsze w stosunku do wiatru pozornego.",
+    title_pl: "Na kursie baksztag odczucie sily wiatru rzeczywistego jest słabsze czy silniejsze w stosunku do wiatru pozornego?",
     answer_variants: [
       { 
         id: 1, 
@@ -1838,7 +1838,7 @@ export const QuestionsEnum: IQuestion[] = [
     id: 58,
     title_by: "Дзве яхты ідуць аднолькавым галсам з аднолькавай хуткасцю. Першы - бейдевіндам, другі - бакштагам. Іх курсы могуць стварыць рызыку сутыкнення. Хто павінен саступіць?",
     title_ru: "Две яхты идут одинаковым галсом с одинаковой скоростью. Первый - бейдевиндом, второй - бакштагом. Их курсы могут создать риск столкновения. Кто должен уступить?",
-    title_pl: "Dwa jachty płyną tym samym halsem i z taką samą predkoscią. Pierwszy bajdewindem a drugi baksztagiem. Kierunki ich przemieszczania się mogą wskazywać na ryzyko zderzenia. Który jacht powinien ustapić?",
+    title_pl: "Dwa jachty płyną tym samym halsem i z taką samą predkoscią. Pierwszy bajdewindem a drugi baksztagiem. Kierunki ich przemieszczania się mogą wskazywać na ryzyko zderzeniKtóry jacht powinien ustapić?",
     answer_variants: [
       {
         id: 1,
@@ -2383,7 +2383,7 @@ export const QuestionsEnum: IQuestion[] = [
     id: 75,
     title_by: "Які аварыйны нумар тэлефона ў Воднай Добраахвотнай Выратавальнай Службе на Мазурскіх азёрах і возеры Езёрак?",
     title_ru: "Какой аварийный номер телефона у Водной Добровольной Спасательной Службы на Мазурских озёрах и озера Езёрак?",
-    title_pl: "Jaki jest numer telefonu alarmowego nad wodą Wodnego Ochotniczego Pogotowia Ratunkowego na szlaku Wielkich Jeziora Mazurskich i jeziorze Jeziorak.",
+    title_pl: "Jaki jest numer telefonu alarmowego nad wodą Wodnego Ochotniczego Pogotowia Ratunkowego na szlaku Wielkich Jeziora Mazurskich i jeziorze Jeziorak?",
     answer_variants: [
       {
         id: 1,
