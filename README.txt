@@ -1,4 +1,4 @@
-# Sailor Simulator 1.8
+# Sailor Simulator 1.9
 
 ## Summary
 Online simulator for young sailors. Answer the questions step by step and observe your progress. Three

@@ -136,7 +136,7 @@ export const QuestionsEnum: IQuestion[] = [
   {
     id: 5,
     title_by: "З якога боку трэба абмінаць кардынальны знак знізу?",
-    title_ru: "С какой стороны следзьмет обойти кардинальный знак внизу?",
+    title_ru: "С какой стороны следует обойти кардинальный знак внизу?",
     title_pl: "Od której strony należy omijać poniższy znak kardynalny?",
     images: ['image5.png'],
     answer_variants: [
