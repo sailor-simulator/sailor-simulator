@@ -1,4 +1,14 @@
 <div class="container pt-3 pb-3">
+  <div class="app-theme">
+    <span
+      class="badge bg-light text-dark"
+      (click)="toggleTheme()">
+      {{theme === 'light' ? 'Dark' : 'Light'}}
+    </span>
+  </div>
+  <div class="app-version">
+    <span class="badge bg-light text-dark">1.11</span>
+  </div>
   <ul class="nav nav-tabs mb-3">
     <li *ngFor="let tab of languageTabs" class="nav-item">
       <a

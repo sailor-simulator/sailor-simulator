@@ -15,3 +15,16 @@
   }
 }
 
+.app-theme {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.app-version {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}

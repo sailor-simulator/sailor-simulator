@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
   unPassedQuestions: IQuestion[] = [];
   isLoading: boolean;
   languageTabs = Languages;
+  theme = 'light';
 
   constructor(private arrayService: ArrayService) {}
 
@@ -31,6 +32,11 @@ export class AppComponent implements OnInit {
       localStorage.setItem('lang', this.selectedLanguage);
     } else {
       this.selectedLanguage = (localStorage.getItem('lang') as LanguagesEnum);
+    }
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'light');
+    } else {
+      this.theme = (localStorage.getItem('theme'));
     }
   }
 
@@ -87,5 +93,12 @@ export class AppComponent implements OnInit {
   changeSelectedLanguage(value: LanguagesEnum): void {
     this.selectedLanguage = value;
     localStorage.setItem('lang', value);
+  }
+
+  toggleTheme(): void {
+    this.theme = this.theme === 'light'
+      ? 'dark'
+      : 'light';
+    localStorage.setItem('theme', this.theme);
   }
 }
