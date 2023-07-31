@@ -1588,7 +1588,7 @@ export const QuestionsEnum: IQuestion[] = [
         title_ru: "выполнении 30 компрессий и 2 искусственных вдохов", 
         title_pl: "wykonywaniu 30 uciśnięć i 2 oddechów ratowniczych", 
         has_selected: undefined, 
-        is_correct: true 
+        is_correct: false 
       },
       { 
         id: 2, 
@@ -1604,7 +1604,7 @@ export const QuestionsEnum: IQuestion[] = [
         title_ru: "все ответы верны", 
         title_pl: "wszystkie odpowiedzi są prawidłowe", 
         has_selected: undefined, 
-        is_correct: false 
+        is_correct: true 
       }
     ]
   },
@@ -1838,7 +1838,7 @@ export const QuestionsEnum: IQuestion[] = [
     id: 58,
     title_by: "Дзве яхты ідуць аднолькавым галсам з аднолькавай хуткасцю. Першы - бейдевіндам, другі - бакштагам. Іх курсы могуць стварыць рызыку сутыкнення. Хто павінен саступіць?",
     title_ru: "Две яхты идут одинаковым галсом с одинаковой скоростью. Первый - бейдевиндом, второй - бакштагом. Их курсы могут создать риск столкновения. Кто должен уступить?",
-    title_pl: "Dwa jachty płyną tym samym halsem i z taką samą predkoscią. Pierwszy bajdewindem a drugi baksztagiem. Kierunki ich przemieszczania się mogą wskazywać na ryzyko zderzeniKtóry jacht powinien ustapić?",
+    title_pl: "Dwa jachty płyną tym samym halsem i z taką samą predkoscią. Pierwszy bajdewindem a drugi baksztagiem. Kierunki ich przemieszczania się mogą wskazywać na ryzyko zderzeni. Który jacht powinien ustapić?",
     answer_variants: [
       {
         id: 1,
@@ -2389,7 +2389,7 @@ export const QuestionsEnum: IQuestion[] = [
         id: 1,
         title_by: "601 100 100",
         title_ru: "601 100 100",
-        title_pl: "601 100 100",
+        title_pl: "601 100 100 i 984 szlak WJM i j. Jeziorak",
         has_selected: undefined,
         is_correct: true
       },
@@ -2397,7 +2397,7 @@ export const QuestionsEnum: IQuestion[] = [
         id: 2,
         title_by: "600 100 100",
         title_ru: "600 100 100",
-        title_pl: "600 100 100",
+        title_pl: "600 100 100 i 985 szlak WJM i j. Jeziorak",
         has_selected: undefined,
         is_correct: false
       },
@@ -2405,7 +2405,7 @@ export const QuestionsEnum: IQuestion[] = [
         id: 3,
         title_by: "601 100 000",
         title_ru: "601 100 300",
-        title_pl: "601 100 300",
+        title_pl: "601 100 300 i 994 szlak WJM i j. Jeziorak",
         has_selected: undefined,
         is_correct: false
       }
