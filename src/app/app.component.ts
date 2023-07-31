@@ -5,6 +5,7 @@ import { QuestionsEnum } from './data/questions.enum';
 import { IQuestion } from './interfaces/question.interface';
 import { ArrayService } from './services/array.service';
 import { ThemesEnum } from './data/theme.enum';
+import { DarkThemeText } from './data/texts.enum';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,8 @@ export class AppComponent implements OnInit {
   isLoading: boolean;
   languageTabs = Languages;
   theme: ThemesEnum = ThemesEnum.LIGHT;
+  darkThemeText = DarkThemeText;
+  themesEnum = ThemesEnum;
 
   get isDarkTheme(): boolean {
     return this.theme === 'dark';
@@ -102,8 +105,9 @@ export class AppComponent implements OnInit {
     localStorage.setItem('lang', value);
   }
 
-  updateTheme(isDarkTheme: boolean): void {
-    this.theme = isDarkTheme ? ThemesEnum.DARK : ThemesEnum.LIGHT;
+  updateTheme(): void {
+    this.theme = this.theme === ThemesEnum.DARK ? ThemesEnum.LIGHT : ThemesEnum.DARK;
+    console.log(this.theme);
     localStorage.setItem('theme', this.theme);
     const html = document.querySelector('html');
     html.setAttribute('data-bs-theme', this.theme);
