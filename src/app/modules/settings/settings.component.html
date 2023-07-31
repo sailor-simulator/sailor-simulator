@@ -42,7 +42,7 @@
           value=""
           id="darkTheme"
           [(ngModel)]="isDarkTheme"
-          (change)="themeChanged.emit(isDarkTheme)"
+          (change)="themeChanged.emit()"
           [ngModelOptions]="{standalone: true}">
         <label class="form-check-label" for="darkTheme">
           {{ darkThemeText[selectedLanguage] }}

@@ -16,7 +16,7 @@ export class SettingsComponent {
   @Input() isDarkTheme: boolean;
 
   @Output() testStarted = new EventEmitter<ITestSettings>();
-  @Output() themeChanged = new EventEmitter<boolean>();
+  @Output() themeChanged = new EventEmitter();
 
   questions = QuestionsEnum;
   languageOptions = Languages;
