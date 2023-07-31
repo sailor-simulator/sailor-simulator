@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Languages, LanguagesEnum } from 'src/app/data/languages.enum';
 import { QuestionsEnum } from 'src/app/data/questions.enum';
-import { TestSuccessText, TestFailureText, ErrorQtyText, FromText, RestartTestText } from 'src/app/data/texts.enum';
+import { TestSuccessText, TestFailureText, ErrorQtyText, FromText, RestartTestText, DarkThemeText } from 'src/app/data/texts.enum';
 import { IAnswerVariant } from 'src/app/interfaces/answer-variant.interface';
 import { IQuestion } from 'src/app/interfaces/question.interface';
 import { ITestSettings } from 'src/app/interfaces/test-settings.interface';
@@ -19,6 +19,7 @@ export class ResultsComponent {
   @Input() isDarkTheme: boolean;
 
   @Output() testRestarted = new EventEmitter();
+  @Output() themeChanged = new EventEmitter();
 
   languageTabs = Languages;
   testSuccessText = TestSuccessText;
@@ -26,6 +27,7 @@ export class ResultsComponent {
   fromText = FromText;
   errorQtyText = ErrorQtyText;
   restartTestText = RestartTestText;
+  darkThemeText = DarkThemeText;
   isLoading = false;
 
   restartTest(): void {

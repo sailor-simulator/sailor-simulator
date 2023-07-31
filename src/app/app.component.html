@@ -3,7 +3,7 @@
     <span
       class="badge"
       [ngClass]="{ 'bg-light text-dark': theme === 'light', 'bg-secondary text-light': theme === 'dark' }">
-      1.14
+      1.15
     </span>
   </div>  
   <ul class="nav nav-tabs mb-3">
@@ -35,10 +35,12 @@
     [selectedLanguage]="selectedLanguage"
     [isAnswerVariantsRandom]="isAnswerVariantsRandom"
     [questions]="questions"
+    [isDarkTheme]="isDarkTheme"
     (errorAnswer)="updateUnPassedQuestions($event)"
     (isLoading)="startAndStopSpinner()"
     (testFinished)="finishTest()"
-    (testDeclined)="declineTest()">
+    (testDeclined)="declineTest()"
+    (themeChanged)="updateTheme()">
   </app-questions>
 
   <app-results
@@ -49,25 +51,10 @@
     [maximumErrorsQty]="maximumErrorsQty"
     [isDarkTheme]="isDarkTheme"
     (isLoading)="startAndStopSpinner()"
-    (testRestarted)="restartTest()">
+    (testRestarted)="restartTest()"
+    (themeChanged)="updateTheme()">
   </app-results>
-  <div class="row mt-3 text-center" *ngIf="(hasTestStarted || hasTestFinished) && !isLoading">
-    <div class="col">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        value=""
-        id="darkTheme"
-        [(ngModel)]="isDarkTheme"
-        (change)="updateTheme()"
-        [ngModelOptions]="{standalone: true}">
-      <label class="form-check-label" for="darkTheme">
-        {{ darkThemeText[selectedLanguage] }}
-      </label>
-    </div>
-  </div>
 </div>
-
 
 <div class="spinner-grow text-primary" role="status" *ngIf="isLoading">
   <span class="visually-hidden">Loading...</span>
