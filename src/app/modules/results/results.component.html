@@ -48,7 +48,7 @@
         *ngFor="let answerVariant of question.answer_variants"
         type="button"
         class="btn mt-2 result-btn"
-        [class.btn-light]="!answerVariant.has_selected && !answerVariant.is_correct"
+        [class.btn-secondary]="!answerVariant.has_selected && !answerVariant.is_correct"
         [class.btn-success]="answerVariant.is_correct"
         [class.btn-danger]="answerVariant.has_selected">
         {{ answerVariant['title_' + selectedLanguage] }}

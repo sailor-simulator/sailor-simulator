@@ -30,9 +30,9 @@
           *ngFor="let answerVariant of questions[counter].answer_variants"
           type="button"
           class="btn mt-3 answer-btn"
-          [class.btn-light]="answerVariant.has_selected === undefined || answerVariant.has_selected === null"
+          [class.btn-secondary]="answerVariant.has_selected === undefined || answerVariant.has_selected === null"
           [class.btn-success]="answerVariant.has_selected === answerVariant.is_correct"
-          [class.btn-danger]="answerVariant.has_selected !== answerVariant.is_correct"
+          [class.btn-danger]="answerVariant.has_selected && answerVariant.has_selected !== answerVariant.is_correct"
           (click)="selectAnswerVariant(answerVariant, questions[counter])">
           {{ answerVariant['title_' + selectedLanguage] }}
         </button>
