@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Languages, LanguagesEnum } from 'src/app/data/languages.enum';
 import { QuestionsEnum } from 'src/app/data/questions.enum';
-import { DescriptionText, RandomAnswerVariantsText, RandomQuestionText, StartTestText, TitleText } from 'src/app/data/texts.enum';
+import { DarkThemeText, DescriptionText, RandomAnswerVariantsText, RandomQuestionText, StartTestText, TitleText } from 'src/app/data/texts.enum';
 import { ITestSettings } from 'src/app/interfaces/test-settings.interface';
 
 @Component({
@@ -13,8 +13,10 @@ export class SettingsComponent {
   @Input() selectedLanguage: LanguagesEnum;
   @Input() isQuestionsRandom: boolean;
   @Input() isAnswerVariantsRandom: boolean;
+  @Input() isDarkTheme: boolean;
 
   @Output() testStarted = new EventEmitter<ITestSettings>();
+  @Output() themeChanged = new EventEmitter<boolean>();
 
   questions = QuestionsEnum;
   languageOptions = Languages;
@@ -25,6 +27,7 @@ export class SettingsComponent {
   randomQuestionText = RandomQuestionText;
   randomAnswerVariantsText = RandomAnswerVariantsText;
   startTestText = StartTestText;
+  darkThemeText = DarkThemeText;
 
   startTest(): void {
     this.isLoading = true;
