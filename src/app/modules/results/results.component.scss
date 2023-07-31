@@ -1,5 +1,15 @@
 .main_image {
-  max-width: 160px;
+  svg {
+    height: 160px;
+    width: 160px;
+  }
+
+  &.dark {
+    svg path {
+      fill: #fff;
+      opacity: 0.75;
+    }
+  }
 }
 .btn {
   text-transform: none !important;
@@ -27,6 +37,10 @@
 }
 
 .question_image {
+  background: #fff;
+  border-radius: 10px;
+  margin-right: 5px;
   max-height: 100px;
+  padding: 10px;
   width: auto;
 }

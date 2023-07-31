@@ -16,6 +16,7 @@ export class ResultsComponent {
   @Input() unPassedQuestions: IQuestion[] = [];
   @Input() questions: IQuestion[];
   @Input() maximumErrorsQty: number;
+  @Input() isDarkTheme: boolean;
 
   @Output() testRestarted = new EventEmitter();
 

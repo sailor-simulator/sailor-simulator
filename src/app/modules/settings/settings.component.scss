@@ -1,5 +1,15 @@
 .main_image {
-  max-width: 240px;
+  svg {
+    width: 160px;
+    height: 160px;
+  }
+
+  &.dark {
+    svg path {
+      fill: #fff;
+      opacity: 0.75;
+    }
+  }
 }
 
 .row .form-check-input[type=checkbox] {

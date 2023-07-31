@@ -16,6 +16,12 @@ export const RandomQuestionText = {
   pl: 'pytania losowo'
 }
 
+export const DarkThemeText = {
+  by: 'цёмная тэма',
+  ru: 'темная тема',
+  pl: 'ciemny schemat'
+}
+
 export const RandomAnswerVariantsText = {
   by: 'змяшаць варыянты адказаў',
   ru: 'перемешать варианты ответов',
