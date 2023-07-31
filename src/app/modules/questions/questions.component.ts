@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { LanguagesEnum } from 'src/app/data/languages.enum';
-import { FinishTestText, FromText, QuestionText } from 'src/app/data/texts.enum';
+import { DarkThemeText, FinishTestText, FromText, QuestionText } from 'src/app/data/texts.enum';
 import { IAnswerVariant } from 'src/app/interfaces/answer-variant.interface';
 import { IQuestion } from 'src/app/interfaces/question.interface';
 
@@ -13,16 +13,19 @@ export class QuestionsComponent {
   @Input() selectedLanguage: LanguagesEnum = LanguagesEnum.BY;
   @Input() isAnswerVariantsRandom: boolean;
   @Input() questions: IQuestion[];
+  @Input() isDarkTheme: boolean;
 
   @Output() errorAnswer = new EventEmitter<IQuestion>();
   @Output() testFinished = new EventEmitter();
   @Output() testDeclined = new EventEmitter();
   @Output() isLoading = new EventEmitter<boolean>();
+  @Output() themeChanged = new EventEmitter();
 
   counter = 0;
   questionText = QuestionText;
   fromText = FromText;
   finishTestText = FinishTestText;
+  darkThemeText = DarkThemeText;
   isQuestionVisible = true;
 
   get currentProgress(): number {
