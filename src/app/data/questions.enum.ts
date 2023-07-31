@@ -113,7 +113,7 @@ export const QuestionsEnum: IQuestion[] = [
         title_ru: "в любом месте, знак означает место стоянки",
         title_pl: "w dowolnym miejscu, znak oznacza miejsce postojowe",
         has_selected: undefined,
-        is_correct: undefined
+        is_correct: false
       },
       {
         id: 2,
@@ -121,7 +121,7 @@ export const QuestionsEnum: IQuestion[] = [
         title_ru: "нельзя швартовать с правой стороны знака",
         title_pl: "nie wolno parkować z prawej strony znaku",
         has_selected: undefined,
-        is_correct: undefined
+        is_correct: false
       },
       {
         id: 3,
